@@ -1,6 +1,14 @@
- can u removed all en# 🇸🇬 Singapore Financial Calculator 2025
+# 🇸🇬 Singapore Financial Calculator 2025
 
 A comprehensive Progressive Web App (PWA) for Singapore financial calculations with 10 integrated modules covering property, tax, CPF, and investment calculations.
+
+## 🌐 Live Deployment
+
+**Live Site**: [https://singapore-financial-calculator.netlify.app/](https://singapore-financial-calculator.netlify.app/)
+
+**GitHub Repository**: [https://github.com/Yt9991/singapore-financial-calculator](https://github.com/Yt9991/singapore-financial-calculator)
+
+**Last Updated**: January 2025 - Mobile-First Responsive Design
 
 ## 🚀 Features
 

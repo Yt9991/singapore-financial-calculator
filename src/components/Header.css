@@ -1,0 +1,228 @@
+.app-header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  text-align: center;
+  box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.header-content p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.header-badge {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.version-badge {
+  background: var(--accent-primary);
+  color: var(--button-text);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+.powered-by {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+}
+
+.install-prompt {
+  background: rgba(33, 150, 243, 0.1);
+  border: 1px solid rgba(33, 150, 243, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  position: relative;
+}
+
+.install-prompt p {
+  color: var(--info-color);
+  font-weight: 500;
+  margin: 0;
+  flex: 1;
+}
+
+.install-button {
+  background: var(--info-color);
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.install-button:hover {
+  background: #1976d2;
+  transform: translateY(-1px);
+}
+
+.dismiss-button {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  transition: all 0.3s ease;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dismiss-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .header-content p {
+    font-size: var(--font-size-base);
+  }
+  
+  .header-badge {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .install-prompt {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .install-prompt p {
+    font-size: var(--font-size-sm);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: var(--spacing-md);
+  }
+  
+  .header-content h1 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .registration-modal-overlay {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* User Details Section */
+.header-user-section {
+  margin-top: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+}
+
+.add-user-button {
+  background: var(--accent-primary);
+  color: var(--button-text);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px var(--shadow-accent);
+}
+
+.add-user-button:hover {
+  background: var(--button-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px var(--shadow-accent);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: rgba(188, 158, 123, 0.1);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--card-border);
+}
+
+.user-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+}
+
+.user-cea {
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  background: rgba(188, 158, 123, 0.2);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.user-email {
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  background: rgba(33, 150, 243, 0.1);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+.edit-user-button {
+  background: transparent;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-user-button:hover {
+  background: var(--accent-primary);
+  color: var(--button-text);
+}
+
+@media (max-width: 768px) {
+  .user-info {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    text-align: center;
+  }
+  
+  .add-user-button {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}

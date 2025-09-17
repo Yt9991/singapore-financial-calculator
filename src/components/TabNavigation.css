@@ -1,0 +1,119 @@
+.tab-navigation {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
+  padding: 0 var(--spacing-xl);
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-primary) transparent;
+}
+
+.tab-navigation::-webkit-scrollbar {
+  height: 4px;
+}
+
+.tab-navigation::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tab-navigation::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 2px;
+}
+
+.tab-container {
+  display: flex;
+  gap: var(--spacing-sm);
+  min-width: max-content;
+  padding: var(--spacing-sm) 0;
+}
+
+.tab-button {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  min-height: 60px;
+  min-width: 60px;
+  justify-content: center;
+}
+
+.tab-button:hover {
+  background: var(--shadow-light);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.tab-button.active {
+  background: var(--accent-primary);
+  color: var(--button-text);
+  border-color: var(--accent-primary);
+  box-shadow: 0 -2px 4px var(--shadow-accent);
+  transform: translateY(-1px);
+}
+
+.tab-icon {
+  font-size: var(--font-size-lg);
+}
+
+.tab-name {
+  font-size: var(--font-size-xs);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tab-navigation {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-navigation {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .tab-button {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    min-height: 50px;
+    min-width: 50px;
+  }
+  
+  .tab-name {
+    font-size: 10px;
+  }
+  
+  .tab-icon {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-navigation {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .tab-button {
+    padding: var(--spacing-xs);
+    min-height: 45px;
+    min-width: 45px;
+  }
+  
+  .tab-name {
+    display: none;
+  }
+  
+  .tab-icon {
+    font-size: var(--font-size-lg);
+  }
+}

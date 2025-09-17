@@ -1,0 +1,105 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Arial', sans-serif;
+}
+
+.logo-icon {
+  flex-shrink: 0;
+  background: var(--accent-primary);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-main {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.logo-accent {
+  font-weight: 700;
+  color: var(--accent-primary);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.logo-subtitle {
+  font-size: 8px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Size variations */
+.logo-small .logo-icon {
+  padding: 6px;
+}
+
+.logo-small .logo-main,
+.logo-small .logo-accent {
+  font-size: 10px;
+}
+
+.logo-small .logo-subtitle {
+  font-size: 6px;
+}
+
+.logo-large .logo-icon {
+  padding: 12px;
+}
+
+.logo-large .logo-main,
+.logo-large .logo-accent {
+  font-size: 18px;
+}
+
+.logo-large .logo-subtitle {
+  font-size: 10px;
+}
+
+/* Hover effects */
+.logo-container:hover .logo-icon {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+.logo-container:hover .logo-main,
+.logo-container:hover .logo-accent {
+  color: var(--accent-primary);
+  transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-container {
+    gap: 8px;
+  }
+  
+  .logo-main,
+  .logo-accent {
+    font-size: 12px;
+  }
+  
+  .logo-subtitle {
+    font-size: 7px;
+  }
+}

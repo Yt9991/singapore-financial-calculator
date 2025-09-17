@@ -1,0 +1,1 @@
+console.log('Clearing localStorage...'); localStorage.removeItem('sg-finance-salesperson-info'); localStorage.removeItem('sg-finance-client-info'); localStorage.removeItem('sg-finance-agent-info'); console.log('localStorage cleared!');

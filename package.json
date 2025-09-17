@@ -1,0 +1,47 @@
+{
+  "name": "singapore-financial-calculator",
+  "version": "2025.1.0",
+  "description": "Comprehensive Singapore financial calculator with 10 integrated modules covering property, tax, CPF, and investment calculations",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "lucide-react": "^0.263.1",
+    "pdf-lib": "^1.17.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "recharts": "^2.7.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5",
+    "vite-plugin-pwa": "^0.16.4"
+  },
+  "keywords": [
+    "singapore",
+    "financial",
+    "calculator",
+    "property",
+    "tax",
+    "cpf",
+    "investment",
+    "pwa",
+    "react"
+  ],
+  "author": "#thepeoplesagency",
+  "license": "MIT",
+  "homepage": "https://singapore-financial-calculator.netlify.app"
+}

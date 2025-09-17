@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#2D2D2D" rx="4"/>
+  
+  <!-- Accent stripe -->
+  <rect width="32" height="2" fill="#BC9E7B" rx="4"/>
+  
+  <!-- Calculator icon -->
+  <rect x="6" y="8" width="20" height="16" fill="#FFFFFF" rx="2"/>
+  <rect x="7" y="9" width="18" height="2" fill="#2D2D2D" rx="1"/>
+  
+  <!-- Calculator buttons -->
+  <rect x="7" y="12" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="11" y="12" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="15" y="12" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="19" y="12" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  
+  <rect x="7" y="15" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="11" y="15" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="15" y="15" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="19" y="15" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  
+  <rect x="7" y="18" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="11" y="18" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="15" y="18" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="19" y="18" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  
+  <rect x="7" y="21" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="11" y="21" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="15" y="21" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+  <rect x="19" y="21" width="3" height="2" fill="#BC9E7B" rx="0.5"/>
+</svg>
